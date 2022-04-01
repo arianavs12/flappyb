@@ -1,7 +1,15 @@
 // DESARROLLO DE VIDEOJUEGO
+
+const canvas = document.getElementById("flappy")
+const ctx = canvas.getContext("2d")
+/* const img = new Image()
+img.src ="https://sonarlearning.co.uk/images/icons/courseIcons/cocos2d-x-flappy-bird.png"
+img.onload = function(){
+    ctx.drawImage(img, 50, 50, 100, 100)
+} */
 // 1. INSTANCIAMIENTO DEL ÁREA DE JUEGO
 
-const myObstacles = []
+/* const myObstacles = []
 
 const myGameArea = {
     canvas: document.createElement("canvas"),
@@ -20,17 +28,7 @@ const myGameArea = {
     },
     stop: function () {
         clearInterval(this.interval)
-    },
-    score: function() {
-        const points = Math.floor(this.frames / 5)
-
-        this.context.font = "18px arial"
-        this.context.fillStyle = "black"
-        this.context.fillText(`Score: ${points}`, 350, 50)
-        
-
     }
-    
 }
 
 const updateGameArea = () => {
@@ -40,7 +38,6 @@ const updateGameArea = () => {
     player.update()
     updateObstacles()
     checkGameOver()
-    myGameArea.score()
 }
 
 const updateObstacles = () => {
@@ -175,4 +172,4 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     player.speedX = 0
     player.speedY = 0
-})
+}) */
